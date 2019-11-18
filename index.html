@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/loader.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Cryptoknowledge</title>
+  </head>
+
+  <body>
+    <!--------------- body ---------------->
+    <div class="mainContainer">
+      <div id="navinav" class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <span id="h1" class="navbar-brand">Cryptoknowledge </span>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a
+                id="homeButton"
+                class="btn btn-secondary btn-lg active"
+                role="button"
+                aria-pressed="true"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                id="liveReports"
+                class="btn btn-secondary btn-lg active"
+                role="button"
+                aria-pressed="true"
+                >Live Reports</a
+              >
+            </li>
+            <li>
+              <a
+                id="aboutButton"
+                class="btn btn-secondary btn-lg active"
+                role="button"
+                aria-pressed="true"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="loader"></div>
+      <!-- Trigger the modal with a button -->
+      <button
+        type="button"
+        id="modalButton"
+        data-toggle="modal"
+        data-target="#myModal"
+      ></button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title">
+                Deselect at least one coin, only 5 may be selected
+              </h4>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="searchBox">
+        <input type="text" class="searchTerm" placeholder="Currency Code" />
+        <button class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      <div class="parallax-wrapper">
+        <div class="liveReportsContainer"><h1>Coming soon...</h1></div>
+
+        <div class="aboutContainer">
+          <h2>Peleg Ohanuna</h2>
+          <h2>ID: 201621117</h2>
+          <h3>
+            This page represents the current state of crypto currencies. You can
+            navigate the page using the search box by inserting a crypto coin's
+            code name, checking the live reports or get more info in every
+            crypto card.
+          </h3>
+          <img src="https://i.imgur.com/1fjB855.jpg" height="150" width="120" />
+        </div>
+
+        <div class="content">
+          <div id="rowElement" class="row"></div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="jquery.js"></script> -->
+    <script src="CryptoCard.js"></script>
+    <script src="CryptoCardContainer.js"></script>
+    <script src="HttpHandler.js"></script>
+    <script src="src.js"></script>
+  </body>
+</html>
